@@ -1,0 +1,124 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #f2eca3;
+    background-image: url(./images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(./images/lottery2.png);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat; */
+}
+.entry {
+    width: 10rem;
+    height: 30px;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.entry::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Wendy One', sans-serif;
+    
+}
+.entry:focus{
+    box-shadow:
+    tomato 0px 0px 0px 3px,
+    rgb(85, 102, 255) 0px 0px 0px 6px, 
+    rgb(255, 217, 19) 0px 0px 0px 9px, 
+    rgb(255, 156, 85) 0px 0px 0px 12px, 
+    tomato 0px 0px 0px 15px;
+}
+button{
+    margin-top: 3rem;
+    /* width: 10rem; */
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 1.2rem;
+    background-color: rgb(255, 217, 19);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-family: 'Wendy One', sans-serif;
+}
+button:hover{
+    box-shadow:  
+    tomato 0px 0px 0px 3px,
+    rgb(85, 102, 255) 0px 0px 0px 6px, 
+    rgb(255, 217, 19) 0px 0px 0px 9px, 
+    rgb(255, 156, 85) 0px 0px 0px 12px, 
+    tomato 0px 0px 0px 15px;
+}
+.header{
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+}
+.lucky-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+.lucky-section p:nth-child(odd){
+
+    font-size: 2rem;
+    color:black;
+    margin: 1rem;
+    background-color: rgb(255, 217, 19);
+    padding: 0 0 0 1rem;
+
+}
+.lucky-section p:nth-child(even){
+
+    font-size: 2rem;
+    color:#f2eca3;
+    margin: 1rem;
+    background-color: black;
+    padding: 0 0 0 1rem;
+
+}
+.inner1{
+    background-color: rgb(85, 102, 255);
+    color: black;
+    font-size: 2rem;
+}
+.inner2{
+    background-color: tomato;
+    color: black;
+    font-size: 2rem;
+}
+.header-img{
+    height: 20rem;
+}
+label{
+    display: block;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 900;
+    font-family: 'Wendy One', sans-serif;
+    font-size:1.5rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+@media screen and (max-width:600px) {
+    *{
+        font-size: 14px;
+    }
+    .lucky-image{
+        width: 400px;
+    }
+    
+}
